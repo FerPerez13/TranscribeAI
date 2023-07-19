@@ -6,8 +6,8 @@ from tkinter import HORIZONTAL, VERTICAL, Frame, Scrollbar, Tk, Label, Text
 def from_file(filepath):
     # Llamada a Azure
     speech_config = speech.SpeechConfig(
-        subscription="8778e83e29594daa8666cf7d147d3c42",
-        region="eastus",
+        subscription="{subscription-id}",
+        region="{region}",
         speech_recognition_language="es-ES",
     )
     audio_config = speech.audio.AudioConfig(filename=filepath)
